@@ -1,0 +1,8 @@
+on: [push]
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to test policies
+    steps:
+      - name: Test
+        uses: ricard0ff/opabooktest@v1.1
