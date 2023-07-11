@@ -1,0 +1,15 @@
+name: "OPA"
+description: "OPA tests"
+branding:
+  icon: check-square
+  color: green
+inputs:
+  tests:
+    description: "Rego file or directory path."
+    required: false
+    default: ./
+  options:
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
